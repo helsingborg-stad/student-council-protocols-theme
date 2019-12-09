@@ -1,0 +1,40 @@
+{
+  "name": "helsingborg-stad/municipio",
+  "description": "A child theme for the student council web-platform",
+  "license": "MIT",
+  "type": "wordpress-theme",
+  "authors": [
+      {
+          "name": "Max Frederiksen",
+          "email": "max.frederiksen@ecsolutions.se"
+      }
+  ],
+  "repositories": [
+      {
+          "type":"composer",
+          "url":"https://wpackagist.org"
+      },
+      {
+          "type": "vcs",
+          "url": "https://github.com/helsingborg-stad/acf-export-manager.git"
+      }
+  ],
+  "require": {
+      "composer/installers": "^1.0",
+      "philo/laravel-blade": "^3.1",
+      "symfony/debug": "^4.0",
+      "wpackagist-plugin/advanced-custom-fields": "^4.4.7",
+      "helsingborg-stad/acf-export-manager": ">=1.0.0",
+      "aristath/kirki": "^3.0",
+      "shortpixel/shortpixel-php": "^1.4"
+  },
+  "extra" : {
+      "installer-paths" : {
+          "vendor/{$name}/": ["type:wordpress-plugin"]
+      }
+  },
+
+  "scripts": {
+      "post-update-cmd": []
+  }
+}

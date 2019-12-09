@@ -1,0 +1,82 @@
+.post-header > h1 > a {
+  color: $color-text !important;
+  font-weight: 400 !important;
+}
+
+.post-info {
+  margin: 20px 0;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.post-details {
+  max-width: 450px;
+}
+
+
+
+.post-date,
+.post-comments {
+  margin-left:5px;
+}
+
+.top-details {
+  margin-bottom: 8px;
+}
+
+.bottom-details > .subject-link {
+  margin: 0 5px;
+}
+
+.post-ctas {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top:15px;
+}
+
+.post-ctas > a:last-child {
+  margin: 0 10px;
+}
+
+.post-ctas > .btn-oval {
+  margin-bottom: 10px;
+}
+
+#article {
+  margin: 40px 0 20px !important;
+}
+
+.subject-link {
+  text-decoration: underline !important;
+}
+
+li.comment.comment-new .author-image i {
+  color: $color-text;
+}
+
+.comment-header > .author-name {
+  color: $color-text !important;
+}
+
+.article-title {
+  color: $color-text;
+}
+
+.header-image {
+  height: 400px;
+  width: 100%;
+  display: block;
+  margin: 15px 0;
+}
+
+.gallery-images {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.gallery-image {
+  width: 24%;
+}

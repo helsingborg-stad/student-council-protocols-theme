@@ -1,0 +1,39 @@
+.btn-dark-border {
+  border: solid 1px $color-text !important;
+  min-width: 200px;
+  color: $color-text !important;
+}
+
+.btn-dark-border > .pricon {
+  margin-right: 10px;
+}
+
+.btn-primary {
+  border-radius: 20px !important;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 0px solid transparent !important;
+  box-shadow: none !important;
+  position: relative;
+  font-size: 15px !important;
+  background-color: $color-blue !important;
+  transform: translateY(0px);
+  transition:.2s;
+}
+
+.btn-primary:hover {
+  box-shadow: $shadow !important;
+  transform: translateY(-1px);
+}
+
+.modal-footer > .btn-primary {
+  display: inline-block;
+  width: 100px;
+  margin-left: 20px;
+}

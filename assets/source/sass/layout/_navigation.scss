@@ -1,0 +1,101 @@
+#main-menu {
+  text-align: right;
+  display: inline-block;
+  margin-left: auto;  
+}
+
+.site-header.header-casual {
+  background-color: white !important;
+}
+
+.site-header.header-casual .navbar-mainmenu,
+.mobile-nav {
+  background-color: white;
+  border-bottom: 10px solid $color-blue;
+}
+
+.mobile-nav {
+  padding: 10px 0;
+}
+
+.nav-left > li + li{
+  margin-left: 0;
+}
+
+.menu-item-translate,
+.menu-item-search {
+  display: none !important;
+}
+
+.site-header.header-casual .logotype-text {
+  font-size: 1.2em;
+}
+
+.logotype {
+  display: inline-block !important;
+  margin: 0 !important;
+}
+
+.logotype-text {
+  vertical-align: middle;
+  display: inline-block;
+  padding-left: 10px;
+  line-height:22px;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item > a::after {
+  display: none;
+  color: $color-blue;
+}
+
+.current-menu-item {
+  background-color: $color-blue;
+}
+
+.current-menu-item > a {
+  color: white !important;
+}
+
+.navbar ul a:hover {
+  text-decoration: underline !important;
+}
+
+.navbar ul a {
+  padding: 16px;
+}
+
+
+.menu-trigger > .menu-icon,
+.menu-trigger > .menu-icon::after,
+.menu-trigger > .menu-icon::before {
+  background-color: $color-blue !important;
+}
+
+.nav-mobile-menu {
+  border-bottom: 2px solid $color-blue;
+}
+
+.nav-mobile {
+  background-color: white;
+  padding: 15px 0;
+}
+
+.nav-mobile a:hover {
+  background-color: transparent;
+}
+
+.nav-mobile > .menu-item > a {
+  color: $color-blue !important;
+  padding: 8px 14px 12px 0;
+}
+
+.nav-mobile .current-menu-item {
+  background-color: white;
+}
+
