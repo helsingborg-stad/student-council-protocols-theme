@@ -5,7 +5,7 @@
                 <div class="grid-sm-12 nav-flex">
                 
                      {!! municipio_get_logotype('standard') !!}
-                    <a href="{{ get_site_url() }}/protocol" class="logotype-text">
+                    <a href="{{ get_home_url() }}/protocol" class="logotype-text">
                         HELSINGBORG ELEVRÅD
                     </a>
                    
@@ -21,7 +21,7 @@
                 <div class="grid-sm-12 nav-flex">
                     <div>
                         {!! municipio_get_logotype('standard') !!}
-                        <a href="{{ get_site_url() }}/protocol" class="logotype-text">
+                        <a href="{{ get_home_url() }}/protocol" class="logotype-text">
                             HELSINGBORG
                             <br>
                             ELEVRÅD
