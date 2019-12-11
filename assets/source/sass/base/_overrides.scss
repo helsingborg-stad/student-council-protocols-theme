@@ -137,6 +137,7 @@
 
 input[type="text"],
 textarea {
+  max-width:550px;
   border-radius: 4px !important;
   border: 1px solid $color-text !important;
 }
