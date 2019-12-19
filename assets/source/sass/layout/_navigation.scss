@@ -5,6 +5,7 @@
 }
 
 .site-header.header-casual {
+  position: relative;
   background-color: white !important;
 }
 
@@ -41,6 +42,7 @@
   display: inline-block;
   padding-left: 10px;
   line-height:22px;
+  font-size: 1.3em;
 }
 
 .nav-flex {
@@ -52,6 +54,10 @@
 .menu-item > a::after {
   display: none;
   color: $color-blue;
+}
+
+.navbar ul a {
+  padding: 22px 16px !important;
 }
 
 .current-menu-item {
@@ -82,7 +88,7 @@
 }
 
 .nav-mobile {
-  background-color: white;
+  background-color: white !important;
   padding: 15px 0;
 }
 
@@ -99,3 +105,43 @@
   background-color: white;
 }
 
+.dropdown-menu {
+  top: 93%;
+  right: 4%;
+  border: 1px solid $color-blue;
+}
+
+#loginform > p > label {
+  display: inline-block;
+  padding: 8px 0;
+}
+
+@media screen and (min-width: 895px) {
+  #mobile-menu {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .menu-help > .nav-mobile > .menu-item > a[data-dropdown=".login-dropdown"] {
+    display: none !important;
+  }
+
+  .subnav {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .dropdown-menu {
+    top: 125%;
+    right: 52px;
+  }
+
+  .site-header.header-casual .logotype-text {
+    font-size: .8em;
+  }
+
+  .logotype {
+    width: 35px;
+  }
+}
