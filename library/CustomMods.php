@@ -17,6 +17,7 @@ class CustomMods
         add_action('wp_logout', array($this, 'logout_redirect'));
         add_filter('wp_nav_menu_objects', array($this,'remove_logout_confirmation'));
         add_filter('adApiWpIntegration/login/editorRedirect', array($this, 'ad_redirect'));
+        add_action('wp_login', array($this, 'update_ad_user_meta'), 10, 2);
     }
 
     public function modularityMod($items, $post)
@@ -73,7 +74,16 @@ class CustomMods
         return $items;
     }
 
-    public function ad_redirect($redirectUrl) {
+    public function ad_redirect($redirectUrl)
+    {
         return $redirectUrl . '/protocol';
+    }
+
+    public function update_ad_user_meta($user_login, $user)
+    {
+        $userId = $user->data->ID; 
+        $userMeta = get_user_meta($userId);
+        update_user_meta($userId, 'name_of_council_or_politician', $userMeta['first_name'][0] . ' ' . $userMeta['last_name'][0]);
+        update_user_meta($userId, 'target_group', 'politician');
     }
 }
