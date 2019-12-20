@@ -16,6 +16,7 @@ class CustomMods
         add_filter('login_form_bottom', array($this, 'ad_nonce_field'));
         add_action('wp_logout', array($this, 'logout_redirect'));
         add_filter('wp_nav_menu_objects', array($this,'remove_logout_confirmation'));
+        add_filter('adApiWpIntegration/login/editorRedirect', array($this, 'ad_redirect'));
     }
 
     public function modularityMod($items, $post)
@@ -70,5 +71,9 @@ class CustomMods
             }
         }
         return $items;
+    }
+
+    public function ad_redirect($redirectUrl) {
+        return $redirectUrl . '/protocol';
     }
 }
