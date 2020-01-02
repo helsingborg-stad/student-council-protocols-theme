@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Elevroden\n"
-"POT-Creation-Date: 2019-12-19 12:01+0100\n"
-"PO-Revision-Date: 2019-12-19 12:02+0100\n"
+"POT-Creation-Date: 2020-01-02 12:47+0100\n"
+"PO-Revision-Date: 2020-01-02 12:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -3197,11 +3197,23 @@ msgstr ""
 
 #: views/partials/header/subnav.blade.php:37
 msgid "Login failed. Please try again."
-msgstr ""
+msgstr "Inloggningen misslyckades. Försök igen."
 
-#: views/partials/user/loginform.blade.php:7
+#: views/partials/user/loginform.blade.php:4
 msgid "Username"
 msgstr "Användarnamn"
+
+#: views/partials/user/loginform.blade.php:14
+msgid "Remember Me"
+msgstr "Kom ihåg mig"
+
+#: views/partials/user/loginform.blade.php:19
+msgid "Forgot your password?"
+msgstr ""
+
+#: views/partials/user/loginform.blade.php:24
+msgid "Login"
+msgstr "Logga in"
 
 #. Theme Name of the plugin/theme
 msgid "Elevroden"

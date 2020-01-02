@@ -16,7 +16,7 @@
                 <ul class="dropdown-menu login-dropdown dropdown-menu-arrow dropdown-menu-arrow-right">
 
                     @if (is_object($unit) && !empty($unit) && isset($unit->path))
-                        <li><a href="{{ home_url($unit->path) }}" class="pricon pricon-space-right pricon-home"><?php _e('Go to my intranet', 'municipio-intranet'); ?>
+                        <li><a href="{{ home_url($unit->path) }}" class="pricon pricon-space-right pricon-home"><?php _e('Go to my intranet', 'elevroden'); ?>
                             @if (isset($unit->short_name))
                                 &#40;{{$unit->short_name}}&#41;
                             @endif
@@ -34,7 +34,7 @@
                 <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-arrow-right login-dropdown" {!! isset($_GET['login']) && $_GET['login'] == 'failed' ? 'style="display: block;"' : '' !!}>
                     <div class="gutter">
                         @if (isset($_GET['login']) && $_GET['login'] == 'failed')
-                        <div class="gutter gutter-bottom"><div class="notice notice-sm danger"><?php _e('Login failed. Please try again.', 'municipio-intranet'); ?></div></div>
+                        <div class="gutter gutter-bottom"><div class="notice notice-sm danger"><?php _e('Login failed. Please try again.', 'elevroden'); ?></div></div>
                         @endif
                         @include('partials.user.loginform')
                     </div>

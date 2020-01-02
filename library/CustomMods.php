@@ -18,6 +18,7 @@ class CustomMods
         add_filter('wp_nav_menu_objects', array($this,'remove_logout_confirmation'));
         add_filter('adApiWpIntegration/login/editorRedirect', array($this, 'ad_redirect'));
         add_action('wp_login', array($this, 'update_ad_user_meta'), 10, 2);
+        add_action('wp_login_failed', array($this, 'login_failed'));
     }
 
     public function modularityMod($items, $post)
@@ -81,9 +82,21 @@ class CustomMods
 
     public function update_ad_user_meta($user_login, $user)
     {
-        $userId = $user->data->ID; 
+        $userId = $user->data->ID;
         $userMeta = get_user_meta($userId);
         update_user_meta($userId, 'name_of_council_or_politician', $userMeta['first_name'][0] . ' ' . $userMeta['last_name'][0]);
         update_user_meta($userId, 'target_group', 'politician');
+    }
+
+    public function login_failed($username)
+    {
+        // Where did the submit come from
+        $referrer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
+
+        // If there's a valid referrer, and it's not the default log-in screen
+        if (!empty($referrer) && !strstr($referrer, 'wp-login') && !strstr($referrer, 'wp-admin')) {
+            // let's append some information (login=failed) to the URL for the theme to use
+            wp_redirect(strstr($referrer, '?login=failed') ? $referrer : $referrer . '?login=failed');
+        }
     }
 }
