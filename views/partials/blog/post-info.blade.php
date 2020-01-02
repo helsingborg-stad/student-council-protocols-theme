@@ -30,16 +30,18 @@
     </div>
 
     <div class="post-ctas">
-        @if ($settingItems['currentUserId'] == $post->post_author)
-            <a href="#modal-edit-post" class="btn-oval btn-dark-border">
-                <i class="pricon pricon-pen pricon-dark-pen"></i>
-                <span><?php _e('Edit post', 'elevroden'); ?></span>
+        @if (is_user_logged_in())
+            @if ($settingItems['currentUserId'] == $post->post_author)
+                <a href="#modal-edit-post" class="btn-oval btn-dark-border">
+                    <i class="pricon pricon-pen pricon-dark-pen"></i>
+                    <span><?php _e('Edit post', 'elevroden'); ?></span>
+                </a>
+            @endif
+            <a href="{{$settingItems->site_url}}/create-protocol" class="btn-oval btn-dark-border">
+                <i class="pricon pricon-plus"></i>
+                <span><?php _e('Write a new post', 'elevroden'); ?></span>
             </a>
         @endif
-        <a href="{{$settingItems->site_url}}/create-protocol" class="btn-oval btn-dark-border">
-            <i class="pricon pricon-plus"></i>
-            <span><?php _e('Write a new post', 'elevroden'); ?></span>
-        </a>
     </div>
 
 </div>
