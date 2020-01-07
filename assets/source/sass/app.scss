@@ -1,7 +1,12 @@
 //Settings
 // @import 'settings/font';
 
+html {
+    overflow-x:hidden;
+}
+
 #wrapper {
+    min-height: 100vh !important;
     overflow-x: hidden;
 }
 

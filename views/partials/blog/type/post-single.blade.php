@@ -18,7 +18,7 @@
             @if ($settingItems['gallery_images'])
               <ul class="image-gallery grid grid-gallery">
                 @foreach ($settingItems['gallery_images'] as $gallery_image_url)
-                  <li class="grid-md-3">
+                  <li class="grid-xs-6 grid-md-3">
                     <a href="{{ $settingItems['site_url'] . '/wp-content' . explode('wp-content', $gallery_image_url)[1] }}" class="box lightbox-trigger"
                       style="
                         background-image: url({{$settingItems['site_url'] . '/wp-content' . explode('wp-content', $gallery_image_url)[1]}});

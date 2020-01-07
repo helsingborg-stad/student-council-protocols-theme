@@ -25,13 +25,13 @@
 }
 
 .box.lightbox-trigger {
-  max-height: 175px !important;
-  min-height: 175px !important;
+  height:210px;
   overflow:hidden;
 }
 
 .link-item {
   margin-bottom: 30px;
+  padding-right: 40px;
 }
 
 .grid-md-12 {
@@ -47,11 +47,16 @@
 }
 
 .image-gallery.grid {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .main-footer {
   display: none;
+}
+
+.grid-xs-6 {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* CUSTOM CHECKBOX */

@@ -1,11 +1,50 @@
+
+
 @media screen and (min-width: 700px) {
   .header-image {
     height: 550px;
   }
 }
 
+@media screen and (min-width: 895px) {
+  #mobile-menu {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .box.lightbox-trigger {
+    height:190px;
+  }
+
+  .menu-help > .nav-mobile > .menu-item > a[data-dropdown=".login-dropdown"] {
+    display: none !important;
+  }
+
+  .subnav {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .dropdown-menu {
+    top: 125%;
+    right: 52px;
+  }
+
+  .site-header.header-casual .logotype-text {
+    font-size: .8em;
+  }
+
+  .logotype {
+    width: 35px;
+  }
+}
 
 @media screen and (max-width: 500px) {
+  .box.lightbox-trigger {
+    height:150px;
+  }
+
   .post-ctas > .btn-oval {
     font-size: .7em;
     min-width: 140px !important;

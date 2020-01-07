@@ -117,32 +117,3 @@
   padding: 8px 0;
 }
 
-@media screen and (min-width: 895px) {
-  #mobile-menu {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 895px) {
-  .menu-help > .nav-mobile > .menu-item > a[data-dropdown=".login-dropdown"] {
-    display: none !important;
-  }
-
-  .subnav {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  .dropdown-menu {
-    top: 125%;
-    right: 52px;
-  }
-
-  .site-header.header-casual .logotype-text {
-    font-size: .8em;
-  }
-
-  .logotype {
-    width: 35px;
-  }
-}
