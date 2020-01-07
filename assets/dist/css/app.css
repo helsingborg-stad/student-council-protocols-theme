@@ -34,7 +34,8 @@ a {
 
 .logotype {
   display: inline-block !important;
-  margin: 0 !important; }
+  margin: 0 !important;
+  max-width: 55px !important; }
 
 .logotype-text {
   vertical-align: middle;
@@ -171,7 +172,8 @@ a {
   margin: 40px 0 20px !important; }
 
 .subject-link {
-  text-decoration: underline !important; }
+  text-decoration: underline !important;
+  display: inline-block; }
 
 li.comment.comment-new .author-image i {
   color: #252525; }
