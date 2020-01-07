@@ -1,7 +1,7 @@
 <div class="post-info">
     <div class="post-details">
         <div class="top-details">
-            <a href="https://testintranat.helsingborg.se/user/{{ get_the_author_meta('nicename') }}" class="author-profile-link">
+            <a href="https://intranat.helsingborg.se/user/{{ get_the_author_meta('nicename') }}" class="author-profile-link">
                 <span class="post-author-name">
                     {{ get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name') }}
                 </span>
