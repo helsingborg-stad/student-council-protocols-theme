@@ -1,7 +1,11 @@
 <div class="post-info">
     <div class="post-details">
         <div class="top-details">
-            <span class="post-author-name">{{ get_the_author_meta('nicename') }}</span>
+            <a href="https://testintranat.helsingborg.se/user/{{ get_the_author_meta('nicename') }}" class="author-profile-link">
+                <span class="post-author-name">
+                    {{ get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name') }}
+                </span>
+            </a>
             <time class="post-date">
                 @if (is_single())
                     {{ in_array(get_field('archive_' . sanitize_title(get_post_type()) . '_post_date_published', 'option'), array('datetime', 'date')) ? the_time(get_option('date_format')) : '' }}

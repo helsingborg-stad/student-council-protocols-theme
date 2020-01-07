@@ -12,7 +12,7 @@ class App
         new \Elevroden\Theme\Article();
         new \Elevroden\Theme\Header();
         new \Elevroden\Theme\Sidebars();
-        new \Elevroden\ModularityMod();
+        new \Elevroden\CustomMods();
 
         new \Elevroden\Modularity\Posts();
 

@@ -1,6 +1,6 @@
 
 
-{!! $navigation['mobileMenu'] !!}
+{!! $navigation['sidebarMenu'] !!}
 
 {!!
     wp_nav_menu(array(

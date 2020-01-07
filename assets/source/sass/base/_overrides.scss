@@ -172,3 +172,13 @@ textarea {
 .breadcrumbs-wrapper {
   display: none;
 }
+
+.comment-respond {
+  display: none !important;
+}
+
+#login-password,
+#user_pass {
+  border: 1px solid $color-text;
+  border-radius: 4px;
+}
