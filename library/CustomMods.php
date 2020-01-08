@@ -8,6 +8,9 @@ class CustomMods
     {
         $this->postTypeSlug = 'protocol';
 
+        $subRole = get_role('subscriber');
+        $subRole->add_cap('read_private_pages');
+
         update_option('options_mod_form_crypt', false);
 
         add_filter('Municipio/blog/post_settings', array($this, 'modularityMod'), 10, 2);
