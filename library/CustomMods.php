@@ -16,7 +16,7 @@ class CustomMods
         add_filter('login_form_bottom', array($this, 'ad_nonce_field'));
         add_action('wp_logout', array($this, 'logout_redirect'));
         add_filter('wp_nav_menu_objects', array($this,'remove_logout_confirmation'));
-        add_filter('adApiWpIntegration/login/editorRedirect', array($this, 'ad_redirect'));
+        add_filter('adApiWpIntegration/login/subscriberRedirect', array($this, 'ad_redirect'));
         add_action('wp_login', array($this, 'update_ad_user_meta'), 10, 2);
         add_action('wp_login_failed', array($this, 'login_failed'));
     }
