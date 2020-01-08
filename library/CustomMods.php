@@ -22,6 +22,7 @@ class CustomMods
         add_filter('adApiWpIntegration/login/subscriberRedirect', array($this, 'ad_redirect'));
         add_action('wp_login', array($this, 'update_ad_user_meta'), 10, 2);
         add_action('wp_login_failed', array($this, 'login_failed'));
+        add_action('after_setup_theme', array($this,'remove_admin_bar'));
     }
 
     public function modularityMod($items, $post)
@@ -101,5 +102,12 @@ class CustomMods
             // let's append some information (login=failed) to the URL for the theme to use
             wp_redirect(strstr($referrer, '?login=failed') ? $referrer : $referrer . '?login=failed');
         }
+    }
+
+    public function remove_admin_bar()
+    {
+        if (current_user_can('subscriber')) {
+            show_admin_bar(false);
+          }
     }
 }
