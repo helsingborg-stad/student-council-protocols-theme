@@ -17,8 +17,11 @@ class CustomMods
         add_filter('wp_nav_menu_args', array($this, 'display_wp_nav_menu_args'));
         add_filter('walker_nav_menu_start_el', array($this, 'modify_login_item'), 10, 2);
         add_filter('login_form_bottom', array($this, 'ad_nonce_field'));
-        add_action('wp_logout', array($this, 'logout_redirect'));
+        add_filter('login_redirect', array($this, 'login_redirect'), 10, 3);
         add_filter('wp_nav_menu_objects', array($this,'remove_logout_confirmation'));
+        add_filter('adApiWpIntegration/login/subscriberRedirect', array($this, 'subscriberRedirect'));
+
+        add_action('wp_logout', array($this, 'logout_redirect'));
         add_action('wp_login', array($this, 'update_ad_user_meta'), 10, 2);
         add_action('wp_login_failed', array($this, 'login_failed'));
         add_action('after_setup_theme', array($this,'remove_admin_bar'));
@@ -64,8 +67,18 @@ class CustomMods
 
     public function logout_redirect()
     {
-        wp_redirect(get_home_url() . '/protocol');
+        wp_redirect(get_home_url());
         exit();
+    }
+
+    public function login_redirect($redirect_to, $request, $user)
+    {
+        return get_home_url();
+    }
+
+    public function subscriberRedirect()
+    {
+        return get_home_url();
     }
 
     public function remove_logout_confirmation($items)
