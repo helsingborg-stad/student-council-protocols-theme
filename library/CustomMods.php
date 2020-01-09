@@ -19,7 +19,6 @@ class CustomMods
         add_filter('login_form_bottom', array($this, 'ad_nonce_field'));
         add_action('wp_logout', array($this, 'logout_redirect'));
         add_filter('wp_nav_menu_objects', array($this,'remove_logout_confirmation'));
-        add_filter('adApiWpIntegration/login/subscriberRedirect', array($this, 'ad_redirect'));
         add_action('wp_login', array($this, 'update_ad_user_meta'), 10, 2);
         add_action('wp_login_failed', array($this, 'login_failed'));
         add_action('after_setup_theme', array($this,'remove_admin_bar'));
@@ -79,17 +78,14 @@ class CustomMods
         return $items;
     }
 
-    public function ad_redirect($redirectUrl)
-    {
-        return $redirectUrl . '/protocol';
-    }
-
     public function update_ad_user_meta($user_login, $user)
     {
         $userId = $user->data->ID;
         $userMeta = get_user_meta($userId);
-        update_user_meta($userId, 'name_of_council_or_politician', $userMeta['first_name'][0] . ' ' . $userMeta['last_name'][0]);
-        update_user_meta($userId, 'target_group', 'politician');
+        if (!$userMeta["name_of_council_or_politician"][0] && !$userMeta["target_group"][0]) {
+            update_user_meta($userId, 'name_of_council_or_politician', $userMeta['first_name'][0] . ' ' . $userMeta['last_name'][0]);
+            update_user_meta($userId, 'target_group', 'politician');
+        }
     }
 
     public function login_failed($username)
@@ -108,6 +104,6 @@ class CustomMods
     {
         if (current_user_can('subscriber')) {
             show_admin_bar(false);
-          }
+        }
     }
 }
