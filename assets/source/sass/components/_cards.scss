@@ -1,4 +1,71 @@
 
-.box-news {
+.protocols {
+  position: relative;
+  background-color: $color-orange;
+  padding: 20px 0;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+.card {
+  position: relative;
+  width: 100%;
+  min-height: 304px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+.card-info, .card-paragraph {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-comments-link {
+  text-decoration: underline !important;
+  margin-left: 10px;
+}
+
+.card-body {
+  color: $color-text;
+}
+
+.card-title {
+  display: inline-block;
+  max-width: 80%;
+}
+
+.card-info {
+  margin: 10px 0;
+}
+
+.card-comments-link {
+  text-decoration: underline !important;
+  margin-left: 10px;
+}
+
+.card-edit-btn {
   background-color: $color-blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height:40px;
+  text-align:center;
+  padding-top: 5px;
+  border-top-right-radius: 20px;
+  transition: .3s;
+}
+
+.card-edit-btn:hover {
+  opacity: .8;
+}
+
+.pricon-pen-white {
+  color: white;
+}
+
+.box-title {
+  padding-left: 12px;
 }

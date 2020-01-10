@@ -40,6 +40,18 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .start-page-protocols > .container {
+    padding-left:10px !important;
+    padding-right: 10px !important;
+  }
+
+  .box-title {
+    padding-left: 0;
+  }
+
+}
+
 @media screen and (max-width: 500px) {
   .box.lightbox-trigger {
     height:150px;
