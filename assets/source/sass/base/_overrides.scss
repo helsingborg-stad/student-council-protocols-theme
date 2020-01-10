@@ -82,7 +82,7 @@
 }
 
 /* Hide the browser's default radio button */
-.checkbox-container .checkbox {
+.checkbox-container .input-checkbox {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -111,7 +111,7 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.checkbox-container .checkbox:checked ~ .checkmark:after {
+.checkbox-container .input-checkbox:checked ~ .checkmark:after {
   display: block;
 }
 
@@ -123,6 +123,7 @@
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
+  content: "";
   left: 4px;
   top: -2px;
   width: 8px;
@@ -186,4 +187,25 @@ textarea {
 #user_pass {
   border: 1px solid $color-text;
   border-radius: 4px;
+}
+
+.start-page-protocols > .container {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.stripe {
+  display: none;
+}
+
+.sidebar-slider-area {
+  padding-left: 0 !important;
+}
+
+.modularity-mod-image > .box {
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
 }
