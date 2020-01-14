@@ -57,3 +57,52 @@
   transition:.2s;
   color: $color-text;
 }
+
+.btn-oval {
+  border-radius: 20px !important;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 0px solid transparent;
+  font-size: 15px;
+  transform: translateY(0px);
+  transition:.2s;
+}
+
+.start-page-ctas > .btn-oval:first-child {
+  margin-right: 8px;
+}
+
+.btn-oval:hover {
+  color: $color-blue;
+  box-shadow: $shadow;
+  transform: translateY(-1px);
+}
+
+
+.btn-oval:hover > span,
+.btn-oval:hover > i {
+  color: $color-blue;
+}
+
+.btn-full {
+  background-color:white !important;
+  color: $color-text !important;
+  margin-top: 15px;
+}
+
+.btn-full > .pricon-plus {
+  margin-right: 15px;
+}
+
+.start-page-ctas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}

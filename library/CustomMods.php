@@ -20,6 +20,8 @@ class CustomMods
         add_filter('login_redirect', array($this, 'login_redirect'), 10, 3);
         add_filter('wp_nav_menu_objects', array($this,'remove_logout_confirmation'));
         add_filter('adApiWpIntegration/login/subscriberRedirect', array($this, 'subscriberRedirect'));
+        add_filter('Modularity/Module/Posts/CouncilPoliticianName', array($this, 'councilPoliticianName'));
+        add_filter('Modularity/Module/Posts/commentCount', array($this, 'commentCount'));
 
         add_action('wp_logout', array($this, 'logout_redirect'));
         add_action('wp_login', array($this, 'update_ad_user_meta'), 10, 2);
@@ -118,5 +120,18 @@ class CustomMods
         if (current_user_can('subscriber')) {
             show_admin_bar(false);
         }
+    }
+
+    public function councilPoliticianName($postId)
+    {
+        $userMeta = get_post_meta($postId);
+        $name = $userMeta["name_of_council_or_politician"][0] ? $userMeta["name_of_council_or_politician"][0] : '';
+
+        return $name;
+    }
+
+    public function commentCount($postId)
+    {
+        return count(get_comments(array('post_id' => $postId)));
     }
 }

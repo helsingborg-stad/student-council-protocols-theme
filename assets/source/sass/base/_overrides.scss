@@ -2,6 +2,11 @@
   padding-top: 40px;
 }
 
+[class*="start-page"] > .container {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
 .modal-backdrop-2 .backdrop {
   background-color: $color-text;
   opacity:.5;
@@ -179,19 +184,10 @@ textarea {
   display: none;
 }
 
-.comment-respond {
-  display: none !important;
-}
-
 #login-password,
 #user_pass {
   border: 1px solid $color-text;
   border-radius: 4px;
-}
-
-.start-page-protocols > .container {
-  padding-left: 40px !important;
-  padding-right: 40px !important;
 }
 
 .stripe {
@@ -208,4 +204,15 @@ textarea {
   align-items: center;
   justify-content: center;
   overflow:hidden;
+}
+
+.sidebar-content-area-top > .grid-sm-12 {
+  padding: 0;
+}
+
+.start-page-title {
+  padding-left: 25px;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom:10px;
 }
