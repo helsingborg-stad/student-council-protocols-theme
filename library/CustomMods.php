@@ -73,7 +73,7 @@ class CustomMods
 
     public function login_redirect($redirect_to, $request, $user)
     {
-        return get_home_url();
+        return $request;
     }
 
     public function subscriberRedirect()
