@@ -74,8 +74,8 @@
   transition:.2s;
 }
 
-.btn-oval:last-child {
-  margin-left: 8px;
+.start-page-ctas > .btn-oval:first-child {
+  margin-right: 8px;
 }
 
 .btn-oval:hover {
@@ -102,5 +102,7 @@
 
 .start-page-ctas {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   margin-bottom: 20px;
 }
