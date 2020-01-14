@@ -11,7 +11,8 @@
                     @else
                     <i class="pricon pricon-user-o pricon-lg hidden-md hidden-lg"></i>
                     @endif
-                    <span class="hidden-sm hidden-xs">{{ get_the_author_meta('first_name', get_current_user_id()) }}</span> <i class="pricon pricon-caret-down pricon-xs"></i></span>
+                    
+                    <span class="hidden-sm hidden-xs">{{ get_user_meta(get_current_user_id(), 'name_of_council_or_politician')[0] }}</span> <i class="pricon pricon-caret-down pricon-xs"></i></span>
                 </a>
                 <ul class="dropdown-menu login-dropdown dropdown-menu-arrow dropdown-menu-arrow-right">
 
