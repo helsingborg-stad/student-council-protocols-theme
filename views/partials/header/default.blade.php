@@ -33,7 +33,7 @@
 
 
                     @if (strlen($navigation['mobileMenu']) > 0)
-                        <div class="grid-xs-6 grid-sm-6 text-right-sm text-right-xs {!! apply_filters('Municipio/mobile_menu_breakpoint','hidden-md hidden-lg'); !!}  u-hidden@xl">
+                        <div class="grid-xs-4 grid-sm-6 text-right-sm text-right-xs {!! apply_filters('Municipio/mobile_menu_breakpoint','hidden-md hidden-lg'); !!}  u-hidden@xl">
                             @include('partials.header.subnav')
                             <a href="#mobile-menu" class="menu-trigger" data-target="#mobile-menu">
                                 <span class="menu-icon"></span>
