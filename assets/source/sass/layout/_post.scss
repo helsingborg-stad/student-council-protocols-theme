@@ -26,8 +26,9 @@
   margin-bottom: 8px;
 }
 
-.bottom-details > .subject-link {
-  margin: 0 5px;
+.bottom-details > .subject-link,
+.bottom-details > span {
+  margin-right: 5px;
 }
 
 .post-ctas {
@@ -36,8 +37,8 @@
   margin-top:15px;
 }
 
-.post-ctas > a:last-child {
-  margin: 0 10px;
+.post-ctas > a:first-child {
+  margin-right:10px;
 }
 
 .post-ctas > .btn-oval {

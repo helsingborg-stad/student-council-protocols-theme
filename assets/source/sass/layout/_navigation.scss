@@ -1,7 +1,12 @@
 #main-menu {
   text-align: right;
   display: inline-block;
-  margin-left: auto;  
+  margin-left: auto;
+  font-size: 16px;
+}
+
+.subnav {
+  font-size: 16px;
 }
 
 .site-header.header-casual {
@@ -100,6 +105,7 @@
 .nav-mobile > .menu-item > a {
   color: $color-blue !important;
   padding: 8px 14px 12px 0;
+  font-size: 16px;
 }
 
 .nav-mobile .current-menu-item {
@@ -107,9 +113,13 @@
 }
 
 .dropdown-menu {
-  top: 93%;
+  top: 106%;
   right: 4%;
   border: 1px solid $color-blue;
+}
+
+.dropdown-menu > li > a {
+  padding: 15px !important;
 }
 
 #loginform > p > label {
