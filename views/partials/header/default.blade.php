@@ -24,7 +24,7 @@
                 <div class="grid-sm-12 nav-flex">
                     <div>
                         {!! municipio_get_logotype('standard') !!}
-                        <a href="{{ get_home_url() }}/protocol" class="logotype-text">
+                        <a href="{{ get_home_url() }}" class="logotype-text">
                             HELSINGBORG
                             <br>
                             ELEVRÅD

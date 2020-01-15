@@ -69,18 +69,18 @@ class CustomMods
 
     public function logout_redirect()
     {
-        wp_redirect(get_home_url());
+        wp_redirect(get_home_url() . '?loggedout=true');
         exit();
     }
 
     public function login_redirect($redirect_to, $request, $user)
     {
-        return $request;
+        return $request . '?loggedin=true';
     }
 
     public function subscriberRedirect()
     {
-        return get_home_url();
+        return get_home_url() . '?redirect=true';
     }
 
     public function remove_logout_confirmation($items)
