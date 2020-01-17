@@ -55,10 +55,6 @@
   flex-wrap: wrap;
 }
 
-.main-footer {
-  display: none;
-}
-
 .grid-xs-6 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -206,13 +202,57 @@ textarea {
   overflow:hidden;
 }
 
+.modularity-mod-text {
+  padding: 0 25px;
+}
+
+.modularity-mod-text > .box > .box-title {
+  background-color: white;
+  color: $color-text;
+  font-weight: 600;
+  font-size: 40px;
+  padding: 0;
+  line-height: normal;
+}
+
+.modularity-mod-text > .box {
+  box-shadow: none !important;
+}
+
+.modularity-mod-text > .box > .box-content > p {
+  margin: 15px 0;
+  font-weight: 400;
+}
+
 .sidebar-content-area-top > .grid-sm-12 {
   padding: 0;
 }
 
 .start-page-title {
   padding-left: 25px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   margin-bottom:10px;
+}
+
+.widget_text > .footer-title {
+  color: $color-text;
+}
+
+.footer-title {
+  font-weight: 500;
+  margin-bottom:5px;
+}
+
+.widget_nav_menu > div > ul > li {
+  background-color: #f4f4f4 !important;
+}
+
+.widget_nav_menu > div > ul > li > a {
+  color: $color-blue !important;
+}
+
+.mod-form-field.form-group.checkbox-group > ul{
+  padding: 0 !important;
+  margin: 10px 0 10px -2px !important;
 }

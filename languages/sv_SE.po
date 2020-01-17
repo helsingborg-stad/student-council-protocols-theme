@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Elevroden\n"
-"POT-Creation-Date: 2020-01-02 12:47+0100\n"
-"PO-Revision-Date: 2020-01-02 12:50+0100\n"
+"POT-Creation-Date: 2020-01-15 14:57+0100\n"
+"PO-Revision-Date: 2020-01-15 14:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: style.css\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -215,14 +215,22 @@ msgstr ""
 
 #: templates/module/grid.blade.php:92
 #: templates/module/highlighted-posts.blade.php:44
-#: templates/module/items.blade.php:70
+#: templates/module/items.blade.php:65
 msgid "No posts to show…"
 msgstr ""
 
 #: templates/module/grid.blade.php:99 templates/module/index.blade.php:63
-#: templates/module/items.blade.php:77
 msgid "Show more"
 msgstr ""
+
+#: templates/module/items.blade.php:11
+msgid "View all posts"
+msgstr "Se alla inlägg"
+
+#: templates/module/items.blade.php:16
+#: views/partials/blog/post-info.blade.php:42
+msgid "Write a new post"
+msgstr "Skriv ett nytt inlägg"
 
 #: templates/module/partials/post-filters.blade.php:14
 #: templates/module/partials/post-filters.blade.php:73
@@ -3175,27 +3183,23 @@ msgstr ""
 msgid "Subjects"
 msgstr "Ämnen"
 
-#: views/partials/blog/post-info.blade.php:40
+#: views/partials/blog/post-info.blade.php:47
 msgid "Edit post"
 msgstr "Redigera inlägg"
 
-#: views/partials/blog/post-info.blade.php:45
-msgid "Write a new post"
-msgstr "Skriv ett nytt inlägg"
-
-#: views/partials/header/subnav.blade.php:19
+#: views/partials/header/subnav.blade.php:20
 msgid "Go to my intranet"
 msgstr ""
 
-#: views/partials/header/subnav.blade.php:26
+#: views/partials/header/subnav.blade.php:27
 msgid "Log out"
 msgstr ""
 
-#: views/partials/header/subnav.blade.php:32
+#: views/partials/header/subnav.blade.php:33
 msgid "Log in"
 msgstr ""
 
-#: views/partials/header/subnav.blade.php:37
+#: views/partials/header/subnav.blade.php:38
 msgid "Login failed. Please try again."
 msgstr "Inloggningen misslyckades. Försök igen."
 
@@ -3207,11 +3211,7 @@ msgstr "Användarnamn"
 msgid "Remember Me"
 msgstr "Kom ihåg mig"
 
-#: views/partials/user/loginform.blade.php:19
-msgid "Forgot your password?"
-msgstr ""
-
-#: views/partials/user/loginform.blade.php:24
+#: views/partials/user/loginform.blade.php:21
 msgid "Login"
 msgstr "Logga in"
 
