@@ -32,6 +32,7 @@ class CustomMods
     public function modularityMod($items, $post)
     {
         $formData = get_post_meta($post->ID, 'form-data')[0];
+        $post_author_id = get_post_field('post_author', $post->id);
     
         $items['site_url'] = get_home_url();
         $items['subjects'] = $formData['valj-amnen-kategorier'];
@@ -39,6 +40,7 @@ class CustomMods
         $items['gallery_images'] = $formData['ladda-upp-en-eller-flera-galleri-bilder'];
         $items['attachments'] = $formData['ladda-up-en-eller-flera-filer'];
         $items['currentUserId'] = get_current_user_id();
+        $items['targetGroup'] = get_user_meta($post_author_id, 'target_group')[0];
 
         return $items;
     }
