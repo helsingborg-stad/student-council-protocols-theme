@@ -5,9 +5,6 @@
                 <div class="grid-sm-12 nav-flex">
                 
                      {!! municipio_get_logotype('standard') !!}
-                    <a href="{{ get_home_url() }}" class="logotype-text">
-                        HELSINGBORG ELEVRÅD
-                    </a>
 
                     {!! $navigation['mainMenu'] !!}
 
@@ -24,11 +21,6 @@
                 <div class="grid-sm-12 nav-flex">
                     <div>
                         {!! municipio_get_logotype('standard') !!}
-                        <a href="{{ get_home_url() }}" class="logotype-text">
-                            HELSINGBORG
-                            <br>
-                            ELEVRÅD
-                        </a>
                     </div>
 
 

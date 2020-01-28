@@ -36,7 +36,7 @@
   }
 
   .logotype {
-    width: 45px;
+    max-width: 250px !important;
   }
 }
 
@@ -126,9 +126,5 @@
   
   .site-header.header-casual .logotype-text {
     font-size: 15px;
-  }
-
-  .logotype {
-    width: 32px;
   }
 }
