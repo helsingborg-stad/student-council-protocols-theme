@@ -10,7 +10,7 @@
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "del": "^3.0.0",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.5.2",
@@ -27,7 +27,7 @@
     "hbg-mix": "^2.1.1",
     "imagemin-pngquant": "^4.2.0",
     "node-sass": "^4.10.0",
-    "rev-del": "^1.0.5",
+    "rev-del": "^2.0.0",
     "run-sequence": "^2.2.1"
   },
   "scripts": {
